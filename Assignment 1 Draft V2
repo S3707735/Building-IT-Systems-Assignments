@@ -1,0 +1,293 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+ASSIGNMENT 1
+COSC2625 BUILDING IT SYSTEMS 2018
+MYSTERIOUS FROGS
+RECIPE GENERATOR MOBILE APP
+12TH AUGUST 2018
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+TABLE OF CONTENTS
+
+
+Group Members	3
+Project Description	5
+Motivation	6
+Demonstrable Outcomes	7
+Risks	9
+How	10
+Resources & Tools	10
+[ Refer to specification. ]	10
+Collaborative Workspaces	10
+Communication Expectations	10
+Decision-making Processes	11
+Project Timetable	12
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Group Members
+Viet Richard Tran s3707735
+s3707735@student.rmit.edu.au
+I was born in Australia and I am of Vietnamese background. Admittedly, I do not have a strong passion for any particular field in IT. Yet, I do hope as I continue my studies in the Bachelor of IT program I can find a field that I will develop a passion for. 
+I believe that I have decent writing skills and I expect that this will be an asset for this group when it comes to writing this current assignment and for future assignments. My interests include playing video games and watching TV shows and movies.
+I have found coding and programming quite challenging so far since I began my Bachelor of IT program this year. It is anticipated that the Recipe Generator mobile app that this group plans on working on will involve a great deal of programming. 
+I have been nominated as team leader, therefore, it is expected of me to keep track of the progress and work everyone including myself have made or will make for this current assignment and future others. 
+
+Kelvin Truong s3717846
+Half Chinese/half Vietnamese, speaks Cantonese to family members.
+Passion in IT stemmed from my interest and love in gaming, branched out to becoming interested in PCs and hence, IT.
+Interested in gaming and music. Quite good in time-management if I say so myself. Not particularly bad at anything.
+Not very knowledgeable in IT; very little programming skills. My volume isn’t very quite loud either, so it might be a problem for my group members.
+Was the ‘leader’ during my group projects in the previous semester, so I’d be able to lend a hand taking initiatives. Would also help giving or extending our ideas.
+
+
+[Full Name] [Student Number]
+[Background and Passion in IT]
+[What are you good at/interested in?]
+[What are your weaker points in the context of the project needs]
+[What role do you expect to be performing in the project]
+
+[Full Name] [Student Number]
+[Background and Passion in IT]
+[What are you good at/interested in?]
+[What are your weaker points in the context of the project needs]
+[What role do you expect to be performing in the project]
+
+Tianjie Zhan s3634778
+Chinese, less than a year in Australia. I really like play games, browse some fancy websites and I’m so attracted by interesting apps hope one day I can make one by myself.
+I’m still new in this area and I’m learning some programming skills.
+Poor programming skills.
+I would like to be a good teammate.
+
+
+
+
+
+
+
+
+
+
+
+Project Description
+The IT system this group intends to build is a mobile app that will allow its users to generate a recipe just by scanning the contents of the users’ pantry or fridge. By scanning the barcode, taking a photograph, or entering the product’s name, the mobile app will be able to display a recipe that contains the ingredients the user inputted into the Recipe Generator mobile app. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Motivation
+The members of this group do not know how to cook for themselves. Therefore, this Recipe Generator mobile app will be extremely helpful towards a target audience that includes young university students such as ourselves to be more independent and learn an essential life skill. Furthermore:
+This mobile app will teach people (e.g., adult children who have moved out) to learn how to cook especially with those of limited ability. 
+This mobile app will allow time poor parents and full-time workers to cook with what ingredients they have at home without the need to think of a recipe 
+People with limited ingredients such as those on a budget or of low socioeconomic background can use this mobile app to generate a recipe 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Demonstrable Outcomes
+Minimum Viable Features
+Feature 1: Take pictures of ingredients to generate recipes
+Validation Test: [Description of validation test]
+
+Feature 2: Scan barcodes of ingredients to generate recipes
+Validation Test: [Description of validation test]
+
+Feature 3: Manually enter name of ingredients to generate recipes
+Validation Test: [Description of validation test]
+
+Feature 4: Manually accessing database of recipes without the need the input ingredients
+Validation Test: [Description of validation test]
+
+Feature 5: Link to online food stores for missing ingredients
+Validation Test: [Description of validation test]
+
+
+Extended Features
+Extended Feature 1: A favourites section for the recipes you like
+Validation Test: [Description of validation test]
+
+Extended Feature 2: Share on social media (e.g., Facebook, Instagram etc.) 
+Validation Test: [Description of validation test]
+
+Extended Feature 3: Different regional cuisines in recipe database (e.g., Japanese, Chinese etc.)
+Validation Test: [Description of validation test]
+
+
+Justification
+a)   Workload
+[Justify your expected and actual workloads]
+*NOTE. Go back to this section once the project schedule has been written
+
+b)  Beyond Current Capabilities
+It is anticipated that the creation of the Recipe Generator mobile app prototype will involve a significant amount of programming. As discussed amongst the group, each member’s coding and programming skills are limited due to being only taught basic programming at the start of this year (i.e., Introduction to Programming). 
+Therefore, using every resource available, each group member strives to create a functional prototype consisting of all minimum features. It is expected that accomplishing this will extend each group member’s knowledge of programming. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Risks
+Risk: Not knowing how to ‘do something’ and not getting any help online.
+Example: If we were to create this app on the basis of taking pictures of ingredients, whether it be the ingredients themselves or its barcode, we would need the app to do so, but since all of us are 1st years, we would not be able to know how to ‘execute’ such a task, and so we resort to searching on Google for tutorials and such. However, Google isn’t returning any useful results and so, we are left still not knowing how to, and hence, unable to complete our app.
+Mitigation: We could either think of alternatives such as the user manually entering in the ingredients they have themselves or asking someone who is knowledgeable in IT in person for help.
+ 
+Risk [Not being able to solve a problem due to limited coding and programming knowledge and experience]
+Example: [Certain tools we are depending on to build our XYZ are no longer available ]
+Mitigation: [ Description of mitigation efforts goes here. Example: Identify alternative tools to ensure that our work is done using an open standard]
+ 
+Risk []
+Example: [Certain tools we are depending on to build our XYZ are no longer available ]
+Mitigation: [ Description of mitigation efforts goes here. Example: Identify alternative tools to ensure that our work is done using an open standard]
+ 
+ 
+
+
+
+How
+Resources & Tools
+[ Refer to specification. ]
+Collaborative Workspaces
+Trello: The group’s mentor Trevor Reynolds has set up a Trello board and has sent an invitation to each group member to access this Trello board. 
+https://trello.com/b/gP2KkC94/tr-mysterious-frogs
+
+GitHub: The team leader Viet Richard Tran has set up a GitHub repository and has added each group as a collaborator.
+https://github.com/S3707735/Building-IT-Systems-Assignments/tree/master
+
+Google Docs: The group’s mentor Trevor Reynolds has set up a Google Docs folder which has been shared with each group member. 
+https://drive.google.com/drive/folders/1lv5fnROM032qdkJUCA-sVfbuyABoORCN
+Communication Expectations
+Facebook Messenger will be the main tool to be used for communication outside of the weekly Building IT Systems tutorial.
+It is expected that the group will get into contact with each other over Facebook messenger at least once a week to discuss progress on the current assignment.
+ PLACEHOLDER FOR 3RD DOT POINT
+If a group member does not get into contact with the other group members then every available source of communication (i.e., email, Facebook) will be used to try to get a response from that group member. If all else fails, the mentor Trevor Reynolds and/or course coordinator will have to be involved to try and resolve the lack of communication from that group member. 
+
+Decision-making Processes
+This team’s decision making process will involve a group discussion on the decision that needs to be made. Once an agreement or consensus has been reached will the decision be definitive. 
+How this group will deal with specific problems is by discussing the issue calmly and diplomatically and allowing each group member to have their say. If necessary, the mentor Trevor Reynolds will be involved to mediate the discussion.
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Project Timetable
+ 
+Title
+Planned Start
+Planned Due
+Lead by
+Week 3
+[Create Dropdown for front page]
+[2/9]
+[1/9]
+[Dennis Ritchie]
+[Create Dropdown for front page]
+[2/9]
+[1/9]
+[Dennis Ritchie]
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
