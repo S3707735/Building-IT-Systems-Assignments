@@ -1,0 +1,375 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+ASSIGNMENT 1
+COSC2625 BUILDING IT SYSTEMS 2018
+MYSTERIOUS FROGS
+RECIPE GENERATOR MOBILE APP
+12TH AUGUST 2018
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+TABLE OF CONTENTS
+
+Group Members	3
+Project Description	6
+Motivation	7
+Demonstrable Outcomes	8
+Justification	10
+Risks	11
+How	13
+Resources & Tools	13
+Collaborative Workspaces	13
+Communication Expectations	14
+Decision-making Processes	14
+Project Timetable	16
+
+
+
+
+
+
+
+
+
+
+
+
+
+Group Members
+Viet Richard Tran s3707735
+s3707735@student.rmit.edu.au
+I was born in Australia and I am of Vietnamese background. Admittedly, I do not have a strong passion for any particular field in IT. Yet, I do hope as I continue my studies in the Bachelor of IT program I can find a field that I will develop a passion for. 
+I believe that I have decent writing skills and I expect that this will be an asset for this group when it comes to writing this current assignment and for future assignments. My interests include playing video games and watching TV shows and movies.
+I have found coding and programming quite challenging so far since I began my Bachelor of IT program this year. It is anticipated that the Recipe Generator mobile app that this group plans on working on will involve a great deal of programming. 
+I have been nominated as team leader, therefore, it is expected of me to keep track of the progress and work everyone including myself have made or will make for this current assignment and future others. 
+
+Kelvin Truong s3717846
+Half Chinese/half Vietnamese, speaks Cantonese to family members.
+Passion in IT stemmed from my interest and love in gaming, branched out to becoming interested in PCs and hence, IT.
+Interested in gaming and music. Quite good in time-management if I say so myself. Not particularly bad at anything.
+Not very knowledgeable in IT; very little programming skills. My volume isn’t very quite loud either, so it might be a problem for my group members.
+Was the ‘leader’ during my group projects in the previous semester, so I’d be able to lend a hand taking initiatives. Would also help giving or extending our ideas.
+
+Xinyi Zeng s3673832
+I come from China and speak mandarin at home. To tell the truth, I don’t have much passion in IT. The reason why  I choose this program is that I love playing mobile phone games. Therefore, I want to learn how to code and make some simple games by myself.
+ I am interested in playing mobile phone games and I spent lots of time on playing games.However,I am not good at playing games.I just like it.
+Programming skill is my biggest shortage. Sometimes I just think it is boring.
+Maybe i am not a talented programmer.But it is a necessary skill for me, I will try my best to learn how to program.
+It is easy for me to come up so many ideas. So I prefer to do design the web or app.And I like user interface design.
+
+Lun Yang s3638350
+My nationality is Chinese. I’m a international student studying Bachelor of Information Technology at RMIT University. This is my first year at RMIT. I studied urban and regional planning for one year in a Chinese university before. I like designing and programming especially designing on computer. I have learnt painting for 4 years. I am really into to research the structure and the layout of a room, a building, an area and even a website.
+I am interested in user-centred designing and programming in IT, because I can use a lot of imagination and creativity on them to create something brand new or improve the originals, but programming is not easy for me. I have poor knowledge and skills of programming at the moment.
+Lack of programming skills.
+I want to be a good groupmate to offer some new ideas, and also I want to some design work to make our project better. To the programming part, I would like to try and do some research to figure out some problem that our group meet.
+
+
+
+Tianjie Zhan s3634778
+Chinese, less than a year in Australia. I really like play games, browse some fancy websites and I’m so attracted by interesting apps hope one day I can make one by myself. It’s my first year in RMIT, hope I can be inspired by this course.
+I’m still new in this area and I’m learning some programming skills. I’m interested in design things especially design for the games. 
+Poor programming skills. Still new in the IT, lot of things to learn.
+I would like to be a good teammate and be participating in the project, I will express my ideas, do my jobs and help my teammates as much as possible.
+
+
+
+
+
+
+
+
+
+
+
+Project Description
+The IT system this group intends to build is a mobile app that will allow its users to generate a recipe just by scanning the contents of the users’ pantry or fridge. By scanning the barcode, taking a photograph, or entering the product’s name, the mobile app will be able to display a recipe that contains the ingredients the user inputted into the Recipe Generator mobile app. 
+
+Our app’s main feature will include ‘image-recognition’ and/or the ability to read barcodes and match the items accurately. By doing so, the user would be able to enter in their desired ingredients they wish to use for a dish. 
+
+There is also an alternative system where the users are able to enter in the ingredients in manually (typing and searching). Once complete, our app would attempt to generate and give the user a list of dishes which contains most, and if possible, all of the ingredients entered in. 
+
+The list would display either dishes that are most accurately matched with the ingredients the user has entered in, in descending order (from most accurate to least accurate), or would adjust itself accordingly to the user’s ‘settings’ (such as ‘sort by’ difficulty to make, time taken, or a certain cuisine they wish to make, etc). And naturally, once the user selects a recipe, the full details and steps on how to create the dish will be displayed for the user to see and use.
+
+However, some recipes that are in the generated link might contain ingredients that the user might not have (or not have enough of), and as such, the user would be able to see what they are missing, and is able to click on the missing ingredients where they are taken to a screen that allows the user to see where they are able to obtain the ingredients.
+
+
+Motivation
+The members of this group do not know how to cook for themselves. Therefore, this Recipe Generator mobile app will be extremely helpful towards a target audience that includes young university students such as ourselves to be more independent and learn an essential life skill. Furthermore:
+This mobile app will teach people (e.g., adult children who have moved out) to learn how to cook especially with those of limited ability. 
+This mobile app will allow time poor parents and full-time workers to cook with what ingredients they have at home without the need to think of a recipe 
+People with limited ingredients such as those on a budget or of low socioeconomic background can use this mobile app to generate a recipe 
+There are many, many dishes out there in the world. It is pretty much impossible to know every single one of them. So even veteran cooks could use this app to discover and/or try new food/dishes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Demonstrable Outcomes
+Minimum Viable Features
+Feature 1: Take pictures of ingredients to generate recipes
+Validation Test: We would be taking pictures of commonly used ingredients such as eggs or vegetables, and would check to see if the app recognizes and enters the items into the ingredients list. We would then check to see if it is able to recognize more uncommonly used ingredients such as Spam.
+
+Feature 2: Scan barcodes of ingredients to generate recipes
+Validation Test: We would scan barcodes of ingredients we could get our hands on with the app, then check to see if it registers into the app and is accurately displayed in the ingredients list.
+
+Feature 3: Manually enter name of ingredients to generate recipes
+Validation Test: We would manually enter in random ingredients to check whether it is registered in our ingredients database and then whether it is displayed correctly in the ingredients list.
+
+Feature 4: System able to match ingredients entered to give a recipe with matching ingredients
+Validation Test: We would enter in a list of ingredients in dishes we know of, then enter it in to check whether the app gives us a list of recipes that contains our desired recipe.
+
+Feature 5: Manually accessing database of recipes without the need of input ingredients
+Validation Test: We would simply click on ‘List of recipes’ and have the ‘All recipes’ box ticked, then would check if the recipes are displayed correctly and once clicked, would check if the description and instructions are correctly matched with the recipe.
+
+Feature 6: Link to online food stores or places in general for missing ingredients
+Validation Test: We would deliberately miss out ingredients in a common dish to check whether the feature works or not, then we would check to see if the ‘location’ feature works and if it is accurate or not.
+
+Feature 7: Trying to provide more details to users. There is a section on the application to show more details of ingredients, which shows which ingredients are not enough and provide a good way to tell users where they can buy the ingredients in a reasonable price.
+
+Feature 8: Calorie calculation. The app can shows the calorie of the ingredients and the meals to help the users have a health diet.
+
+Extended Features
+Extended Feature 1: A favourites section for the recipes you like
+Validation Test: We would simply ‘favourite’ a few recipes, then would check to see if it is correctly displayed and entered into the ‘favourites’ section.
+
+Extended Feature 2: Share on social media (e.g., Facebook, Instagram etc.) 
+Validation Test: We would like to create a link for users to share recipes found by them to others. So users can share recipes using social apps such as facebook and instagram.
+
+Extended Feature 3: Different regional cuisines in recipe database (e.g., Japanese, Chinese etc.)
+Validation Test: This is a filter feature, so we would experiment with it by unticking and ticking a few cuisines on and off again and again, checking to see if the recipe list generated matches the filtered options. We would also check to see if the recipes have been correctly ‘tagged’.
+
+
+Justification
+a)   Workload
+In Assignment 1, we had expected each member to take two or three hours to complete the assignment and discuss the details of assignment 1 with the team members in one to two hours. Actually, each team member spent about two hours to complete the assignment and spent about an hour discussing the assignment with the team members. In Assignments 2 and 3, we expect each member to spend five hours a week participating in these assignments, and about one hour of extracurricular time per week to discuss the details of the assignment.
+
+b)  Beyond Current Capabilities
+It is anticipated that the creation of the Recipe Generator mobile app prototype will involve a significant amount of programming. As discussed amongst the group, each member’s coding and programming skills are limited due to being only taught basic programming at the start of this year (i.e., Introduction to Programming). 
+
+Therefore, using every resource available, each group member strives to create a functional prototype consisting of all minimum features. It is expected that accomplishing this will extend each group member’s knowledge of programming.
+
+
+
+
+
+
+
+
+
+Risks
+Risk: Not knowing how to ‘do something’ and not getting any help online.
+Example: If we were to create this app on the basis of taking pictures of ingredients, whether it be the ingredients themselves or its barcode, we would need the app to do so, but since all of us are 1st years, we would not be able to know how to ‘execute’ such a task, and so we resort to searching on Google for tutorials and such. However, Google isn’t returning any useful results and so, we are left still not knowing how to, and hence, unable to complete our app.
+
+Mitigation: We could either think of alternatives such as the user manually entering in the ingredients they have themselves or asking someone who is knowledgeable in IT in person for help.
+ 
+Risk: Tools or guides we wish to use are not available or contains a paywall.
+Example: There are plenty of sites and softwares out there on the internet for anyone to access and use for the creation of their own apps, as such, we would like to use them to create our Recipe Generator app. However, the ones we wish to use are no longer available and an alternative download link is nowhere to be found. Or guides/sites we would like to visit requires some form of payment to get through, and would only then be available for use (not sure if it would 100% be useful).
+
+Mitigation: We would have to search for alternative tools or guides that we could use for our project. We could also grab the softwares or guides from someone we know and trust. Or as a last resort, we would have to abide with the paywall.
+
+Risk: Lack of time and lack of communications leads to problems.
+Example: We are working on this project as a team and our team members have multiple culture background, so communications are very important to us. It’s possible that some of the teammates misunderstand the missions or dare not express their ideas, these will leads to communication gaps and time deficiencies. Wrong time estimation, vague requirements, and unexpected project work increased will affect the project and lead to a lack of time.
+
+Mitigation: We would make good use of Trello and google drive to make our requirements clear to every group members, we would use every possible way to communicate in case we have communication breakdowns.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+How
+Resources & Tools
+Code Academy https://www.codecademy.com/
+Provides tutorials on coding and programming
+Each group member has basic experience with coding and programming, therefore, the use of Code Academy will help us extend our coding and programming knowledge
+Specific version - N/A and zero cost 
+
+Proto.io https://proto.io/
+Allows the construction of high fidelity mockups of each screen/page of the mobile app before making the actual mobile app itself
+Allows us to visualise how the mobile app will look like and be able to make the necessary changes to ensure good user-centered design 
+Specific version - N/A and zero cost with limited usage 
+
+Invision https://www.invisionapp.com/
+Allows us to link the Proto.io screens to simulate actual mobile app usage
+Through user testing we will examine how the user will navigate the app and test the features. If there are any problems with how the user uses the app then the relevant changes will be applied
+Specific version - N/A and free for students
+
+Collaborative Workspaces
+Trello: The group’s mentor Trevor Reynolds has set up a Trello board and has sent an invitation to each group member to access this Trello board. 
+https://trello.com/b/gP2KkC94/tr-mysterious-frogs
+
+GitHub: The team leader Viet Richard Tran has set up a GitHub repository and has added each group as a collaborator.
+https://github.com/S3707735/Building-IT-Systems-Assignments/tree/master
+
+Google Drive: The group’s mentor Trevor Reynolds has set up a Google Drive folder which has been shared with each group member. 
+https://drive.google.com/drive/folders/1lv5fnROM032qdkJUCA-sVfbuyABoORCN
+Communication Expectations
+Facebook Messenger will be the main tool to be used for communication outside of the weekly Building IT Systems tutorial.
+It is expected that the group will get into contact with each other over Facebook messenger at least once a week to discuss progress on the current assignment.
+However, upon finding out communication is expected to be conducted over the Canvas discussion forum made specifically for this group. As a result, communication will be conducted on Canvas from here on out. 
+Each group member will use Canvas to post status updates on the discussion forum on the work done leading up to the completion of each weekly task.  
+If a group member does not get into contact with the other group members then every available source of communication (i.e., email, Facebook) will be used to try to get a response from that group member. If all else fails, the mentor Trevor Reynolds and/or course coordinator will have to be involved to try and resolve the lack of communication from that group member. 
+Decision-making Processes
+This team’s decision making process will involve a group discussion on the decision that needs to be made. Only once an agreement or consensus has been reached will the decision be definitive. 
+How this group will deal with specific problems is by discussing the issue calmly and diplomatically and allowing each group member to have their say. If necessary, the mentor Trevor Reynolds will be involved to mediate the discussion.
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Project Timetable
+Title
+Planned Start
+Planned Due
+Lead by
+Week 3
+Start the write up of Assignment 1 
+30/7
+5/8
+Viet Richard Tran
+Week 4
+Continue the write up of Assignment 1 and finalise it 
+6/8
+12/8
+Viet Richard Tran
+Submit Assignment 1 
+6/8
+12/8
+Viet Richard Tran
+Week 5
+Work on Assignment 2  
+13/8 
+19/8 
+Viet Richard Tran 
+Week 6
+ Work on Assignment 2 
+ 20/8
+26/8 
+Viet Richard Tran 
+Week 7
+ Work on Assignment 2 
+3/9
+9/9
+Viet Richard Tran
+Submit Peer Feedback 1 
+3/9
+9/9
+Viet Richard Tran
+Week 8
+ Work on Assignment 2 
+10/9
+16/9
+Viet Richard Tran
+Submit Assignment 2
+10/9
+16/9
+Viet Richard Tran
+Week 9
+ Work on Assignment 3
+17/9
+23/9
+Viet Richard Tran
+SparkPlus Team Evaluation Due 
+17/9
+23/9
+Viet Richard Tran
+Week 10
+ Work on Assignment 3
+24/9
+30/9
+Viet Richard Tran
+Week 11
+ Work on Assignment 3
+1/10
+7/10
+Viet Richard Tran
+Peer Feedback 2 Due 
+1/10
+7/10
+Viet Richard Tran
+Week 12
+ Work on Assignment 3
+8/10
+14/10
+Viet Richard Tran
+Assignment 3 Due 
+8/10
+14/10
+Viet Richard Tran
+Beyond Semester 2
+SparkPlus Team Evaluation 2 Due 
+
+
+21/10
+Viet Richard Tran
+ 
