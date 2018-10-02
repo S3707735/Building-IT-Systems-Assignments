@@ -1,3 +1,72 @@
 I was working on my own MVF (3) and only realized halfway through that I was thinking of MVF 5 (Manual search recipes) instead of 3 (Manual 
-input of ingredients). So I'm gunna post what I have for now and get everyone's approval for the recipe 'database' (array) that we'll be 
-using for our own codes.
+input of ingredients). So I'm gunna post what I have for now and get everyone's opinion on whether we should use this 'database' (array) as
+a basis for everyone's code (for consistency).
+
+--------- Code starts here ----------
+import java.util.HashMap;
+
+public class MVF3 {
+
+	public static void main(String[] args) {
+		// Since we aren't importing in an entire list of recipe, and instead just 50 recipes, manual searching
+		// would be too difficult unless the user knows exactly what all 50 recipes are name-by-name, in most,
+		// if not all cases, they would not (us included). So we would now make it so the user searches for the 
+		// number assigned to each recipe instead for an easier and more consistent (working) function.
+		HashMap<Integer, String> recipes = new HashMap<Integer, String>();
+		
+		// Creating list of recipes
+		// Source: https://www.thedailymeal.com/best-recipes/50-most-popular-recipes-2017
+		recipes.put(50, "Corn Pudding");
+		recipes.put(49, "Bishi (Armenian Zeppole)");
+		recipes.put(48, "The Cheesecake Factory's SkinnyLicious White Chicken Chili");
+		recipes.put(47, "Herbed Hummus");
+		recipes.put(46, "Best Burger Recipe Ever");
+		recipes.put(45, "Memphis-Style Dry-Rubbed Ribs");
+		recipes.put(44, "Championship Glazed Ribs");
+		recipes.put(43, "Candied Bacon");
+		recipes.put(42, "Bowtie Pasta Salad With Sun-Dried Tomatoes, Black Olives, Feta, and Spinach");
+		recipes.put(41, "Healthy Slow-Cooker Buffalo Chicken Dip");
+		recipes.put(40, "Blackened Rockfish With Garlic Lime Butter");
+		recipes.put(39, "Honey Mustard Turkey Tenderloin Recipe");
+		recipes.put(38, "Grilled Octopus With Lemon and Olive Oil");
+		recipes.put(37, "Imitation Crab Roll");
+		recipes.put(36, "Ground Beef With Onions and Peppers");
+		recipes.put(35, "Monay (Filipino Bread Rolls)");
+		recipes.put(34, "Imitation Crab Macaroni and Cheese");
+		recipes.put(33, "Best Layered Burrito Bake");
+		recipes.put(32, "Hoecakes (Fried Cornbread)");
+		recipes.put(31, "Slow Cooker Barbecue Ribs");
+		recipes.put(30, "Cake Crumb Cookies");
+		recipes.put(29, "Baked Swordfish");
+		recipes.put(28, "Guy Fieri’s Texas Chili");
+		recipes.put(27, "Crock-Pot Shepherd's Pie");
+		recipes.put(26, "The Tropical Kale Smoothie");
+		recipes.put(25, "Vegan Turmeric Latte");
+		recipes.put(24, "This Is the Best Chocolate Chip Cookie in the World");
+		recipes.put(23, "Sweet Potato Casserole");
+		recipes.put(22, "Ground Turkey Stuffed Peppers");
+		recipes.put(21, "The Ultimate Chicken Pot Pie");
+		recipes.put(20, "Perfect Southern Fried Chicken");
+		recipes.put(19, "Cheesecake Factory's Fresh Banana Cream Cheesecake");
+		recipes.put(18, "Lobster Linguine With White Wine Sauce");
+		recipes.put(17, "Roasted Brussels Sprouts With Bacon");
+		recipes.put(16, "In-N-Out's Special Sauce");
+		recipes.put(15, "The Skin-Brightening Kale Smoothie");
+		recipes.put(14, "Pine Mountain Flame Burger");
+		recipes.put(13, "McDonald's Cheeseburger");
+		recipes.put(12, "Quaker Oats' Prize-Winning Meatloaf");
+		recipes.put(11, "What's a Coronarita, and How to Make One");
+		recipes.put(10, "Slow-Cooker Buffalo Wings");
+		recipes.put(9, "Imitation Crab Linguine");
+		recipes.put(8, "The Barefoot Contessa's Herb-Roasted Turkey Breast");
+		recipes.put(7, "Perfect Brisket");
+		recipes.put(6, "Buffalo Wild Wings' Wings and Sauce");
+		recipes.put(5, "Hard-Boiled Eggs in the Microwave");
+		recipes.put(4, "Fried Green Tomato Hornworms");
+		recipes.put(3, "McDonald’s Hash Browns");
+		recipes.put(2, "Roasted Turkey Tenderloins");
+		recipes.put(1, "Imitation Crab Meat Crab Cake");
+		
+	}
+
+}
