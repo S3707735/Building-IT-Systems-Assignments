@@ -36,3 +36,16 @@ public class MVF3 {
 	}
 
 }
+
+-----------------------------End of code, here's a demo of what the code does --------------------------------
+(Type in 'Generate' when list is completed)
+Enter ingredient to input into your ingredients list: 
+Eggs
+Ingredients list: [Eggs]
+Enter ingredient to input into your ingredients list: 
+Bacon
+Ingredients list: [Eggs, Bacon]
+Enter ingredient to input into your ingredients list: 
+Generate
+Ingredients list: [Eggs, Bacon]
+Ingredients list has been submitted into the system. Now generating recipes...
