@@ -22,11 +22,13 @@ public class MVF3 {
 		while (generate == false) {
 			System.out.println("Enter ingredient to input into your ingredients list: ");
 			String ingredient = sc.nextLine();
-			ingredientsList.add(ingredient);
 			// When user is completed with their list, exit out of the loop
 			if (ingredient.contains("Generate")) {
 				generate = true;
-				ingredientsList.remove("Generate");
+			}
+			// If not, user continues to add in ingredients into the list until stated otherwise
+			else {
+				ingredientsList.add(ingredient);
 			}
 			System.out.println("Ingredients list: " + ingredientsList);
 		}
