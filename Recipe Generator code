@@ -1,6 +1,7 @@
 Features still missing: 
 - After ingredient list has been submitted, the system should return recipes with matching ingredients.
 - The ability to remove an ingredient from the ingredients list.
+- The system displays the recipe iformation and the calorie consumption of the recipe when the user (or the system) selects a recipe.
 - Maybe better visuals/interface.
 
 ----------------------------- Code done so far --------------------------------
