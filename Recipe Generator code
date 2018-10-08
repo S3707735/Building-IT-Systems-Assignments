@@ -4,8 +4,16 @@ Features still missing:
 - The system displays the recipe information and the calorie consumption of the recipe when the user (or the system) selects a recipe.
 - Maybe better visuals/interface.
 
+Note: 
+This is all I can do (or got) for now. Got stuck midway with the [if (ingredientsList.contains(ingredients[i]))] and trying to make an 
+array of ArrayList<String>, but was unable to do so (or find anything that had the same premise). Sorry, was never really good at coding
+so gunna need the rest of yous to take over now. Hopefully, what I've done (or was planning to in my head) is visible in this code and
+help you guys have an understanding of what we need to do, but looking at my code might also get you (more) confused, so check if you 
+want I guess.
+
 ----------------------------- Code done so far --------------------------------
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class MVF3 {
@@ -13,13 +21,13 @@ public class MVF3 {
 	public static void main(String[] args) {
 		// Creating array of ingredients inputed
 		ArrayList<String> ingredientsList = new ArrayList<String>();
-				
+
 		Scanner sc = new Scanner(System.in);
-		
+
 		// User enters in ingredient
 		System.out.println("(Type in 'Generate' when list is completed)");
 		boolean generate = false;
-		
+
 		while (generate == false) {
 			System.out.println("Enter ingredient to input into your ingredients list: ");
 			String ingredient = sc.nextLine();
@@ -27,28 +35,138 @@ public class MVF3 {
 			if (ingredient.contains("Generate")) {
 				generate = true;
 			}
-			// If not, user continues to add in ingredients into the list until stated otherwise
+			// If not, user continues to add in ingredients into the list until stated
+			// otherwise
 			else {
 				ingredientsList.add(ingredient);
 			}
 			System.out.println("Ingredients list: " + ingredientsList);
 		}
-		
+
 		System.out.println("Ingredients list has been submitted into the system. Now generating recipes...");
+
+		// Creating array of recipes (and storing its information)
+		Recipes[] recipes = new Recipes[50];
+		String[] ingredients = new String[50];
+
+		// Corn Pudding
+		ArrayList<String> cornPuddingIng = new ArrayList<String>();
+		cornPuddingIng.addAll(Arrays.asList("Corn", "Lime", "Butter", "Olive Oil", "Paprika", "Salt", "Grape",
+				"Cherry Tomatoes", "Basil", "Mint"));
+		recipes[0] = new Recipes("Corn Pudding", cornPuddingIng, 420);
+		
+		ingredients[0] = String.valueOf(cornPuddingIng);
+		
+		// For error checking (for the following loop)
+		int miss = 0;
+		System.out.println("List of recipes with matching ingredients: ");
+
+		for (int i = 0; i < 50; i++) {
+			// Check for each recipe and print its name if it contains matching ingredients
+			// from submitted list
+			if (ingredientsList.contains(ingredients[i])) {
+				System.out.println("Recipe no." + i + ": " + recipes[i].getName());
+			} 
+			else {
+				miss++;
+			}
+		}
+		
+		// If none, print out the following line
+		if (miss == 50) {
+			System.out.println("Sorry, but there is no recipes with matching ingredients from the "
+				+ "ingredients list you have submitted.");
+		}
+		// Else, ask the user to select a recipe
+		else {
+			System.out.println("Please select the recipe (number) you would like to look at: ");
+			int selected = sc.nextInt();
+			
+			// Return every information about the recipe
+			System.out.println(recipes[selected].getName());
+			System.out.println("Calories per serving: " + recipes[selected].getCalorie());
+			
+			// Steps to cook (0) Corn Pudding
+			if (selected == 0) {
+				System.out.println("---------- Ingredients ----------");
+				System.out.println("For the pudding:");
+				System.out.println("10 ears of corn, shucked and grated with liquid reserved");
+				System.out.println("Juice of 1 lime");
+				System.out.println("1 tablespoon butter or olive oil");
+				System.out.println("1 teaspoon paprika");
+				System.out.println("salt to taste");
+				System.out.println();
+				System.out.println("For the tomato garnish:");
+				System.out.println("1 pint grape or cherry tomatoes, sliced in halves");
+				System.out.println("1/4 cup basil, cut in long, thin strips (chiffonade)");
+				System.out.println("1/4 cup mint, mint, cut in long, thin strips (chiffonade)");
+				System.out.println("2 tablespoons olive oil");
+				System.out.println("salt to taste");
+				System.out.println();
+				System.out.println("---------- Directions ----------");
+				System.out.println("For the pudding:");
+				System.out.println("Preheat oven to 450 degrees.  In an oven-safe pan or casserole dish,");
+				System.out.println("combine grated corn and reserved liquid. Bake until no more liquid");
+				System.out.println("remains and the top is crusty and brown, about 25 minutes.");
+				System.out.println();
+				System.out.println("Meanwhile, in a small bowl, mix together tomatoes, basil, mint, 2");
+				System.out.println("tablespoons olive oil and salt to taste; set aside.");
+				System.out.println();
+				System.out.println("Remove corn from oven. While corn is still hot, add lime juice,");
+				System.out.println("butter or olive oil, paprika and salt; mix well.");
+				System.out.println();
+				System.out.println("Garnish with tomato mixture right before serving, either hot or at");
+				System.out.println("room temperature.");
+				System.out.println();
+				System.out.println("For the tomato garnish:");
+				System.out.println("Slice tomatoes, basil, and mint.");
+				System.out.println();
+				System.out.println("Mix in bowl with olive oil and salt.");
+				System.out.println();
+				System.out.println("Garnish corn pudding with the tapenade.");
+			}
+		} 
 
 	}
 
 }
 
+import java.util.ArrayList;
+
+public class Recipes {
+	private String name;
+	private ArrayList<String> ingredients;
+	private int calorie;
+	
+	public Recipes(String name, ArrayList<String> ingredients, int calorie) {
+		this.name = name;
+		this.ingredients = ingredients;
+		this.calorie = calorie;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public ArrayList<String> getIngredients() {
+		return ingredients;
+	}
+
+	public int getCalorie() {
+		return calorie;
+	}
+}
+
 ----------------------------- End of code. Below is a demo of what the code does (so far) --------------------------------
 (Type in 'Generate' when list is completed)
 Enter ingredient to input into your ingredients list: 
-Eggs
-Ingredients list: [Eggs]
-Enter ingredient to input into your ingredients list: 
-Bacon
-Ingredients list: [Eggs, Bacon]
+Corn
+Ingredients list: [Corn]
 Enter ingredient to input into your ingredients list: 
 Generate
-Ingredients list: [Eggs, Bacon]
+Ingredients list: [Corn]
 Ingredients list has been submitted into the system. Now generating recipes...
+List of recipes with matching ingredients: 
+Sorry, but there is no recipes with matching ingredients from the ingredients list you have submitted.
+
+Note: As can see, the system didn't work as planned, but I couldn't find a way to fix it (tonight).
